@@ -9,10 +9,40 @@
     padding-left: 10%;
     width: 60%;
   }
-  .list_items {
+
+  .playlist_text {
+    margin-left: 10%;
     color: white;
-    font-weight: 600;
-    list-style-type: none;
+    font-weight: 400;
+    font-size: medium;
+  }
+
+  .list {
+    margin-top: 8%;
+    margin-bottom: 8%;
+    .list_items {
+      margin-top: 2%;
+      padding: 3%;
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+
+      .list_text {
+        padding-top: 1%;
+        font-weight: 700;
+        font-size: small;
+        color: white;
+      }
+      .list_icon {
+        transform: scale(1.2);
+        margin-left: 8%;
+        margin-right: 8%;
+        color: white;
+      }
+    }
+    .list_items:hover {
+      background-color: #fff2;
+    }
   }
 }
 
