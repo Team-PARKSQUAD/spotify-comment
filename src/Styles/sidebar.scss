@@ -1,10 +1,19 @@
 .sidebar {
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: aqua;
-  width: 20%;
+  flex-direction: column;
+  background-color: #000000;
+  width: 15%;
+  .sidebar_logo {
+    padding-top: 10%;
+    padding-left: 10%;
+    width: 60%;
+  }
+  .list_items {
+    color: white;
+    font-weight: 600;
+    list-style-type: none;
+  }
 }
 
 .mainWindow {
