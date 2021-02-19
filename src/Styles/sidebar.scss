@@ -1,0 +1,16 @@
+.sidebar {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  width: 20%;
+}
+
+.mainWindow {
+  width: 100%;
+  .container {
+    height: 90%;
+    display: flex;
+  }
+}
