@@ -4,11 +4,14 @@ import SearchIcon from '@material-ui/icons/Search';
 import TocIcon from '@material-ui/icons/Toc';
 import AddBoxIcon from '@material-ui/icons/AddBox';
 import FavoriteIcon from '@material-ui/icons/Favorite';
+import { Link } from "react-router-dom";
 
 function sidebar() {
     return (
         <div className="sidebar">
-            <img className='sidebar_logo' alt='' src='https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png'/>
+            <Link to='/'>
+                <img className='sidebar_logo' alt='' src='https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png'/>
+            </Link>
 
             <div className='list'>
                 <li className='list_items'>
