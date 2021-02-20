@@ -1,23 +1,28 @@
 .player_container {
-  width: 85%;
+  width: 84%;
   display: flex;
   background-color: rgb(71, 71, 71);
   flex-direction: column;
+  overflow: scroll;
+  height: 100%;
 
+  .top_colour {
+    height: 90%;
+    background-color: sandybrown;
+    -webkit-mask-image: linear-gradient(to top, transparent 10%, black 90%);
+    mask-image: linear-gradient(to top, transparent 10%, black 90%);
+  }
   .top {
+    z-index: 1;
     width: 100%;
-    background-color: #fcd75d;
-    // mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-    height: 80%;
+    margin-top: -40%;
+    height: 50%;
     display: flex;
     flex-direction: row;
-    margin-bottom: -20%;
 
     .song_image_area {
-      margin-top: 6%;
       margin-left: 2%;
       margin-right: 2%;
-      background-color: yellow;
       height: 40%;
       width: 20%;
       .song_image {
@@ -26,18 +31,16 @@
     }
 
     .song_info {
-      margin-top: 10%;
+      margin-top: 7%;
       color: white;
       display: flex;
       flex-direction: column;
       width: max-content;
       .album_title {
-        margin-top: 3%;
         font-size: 90px;
         font-weight: 800;
       }
       .album_description {
-        margin-top: 4%;
         font-size: 15px;
       }
       .album_likes {
@@ -46,8 +49,34 @@
     }
   }
   .songs {
-    opacity: 0.5;
     background-color: rgb(71, 71, 71);
-    height: 40%;
+    height: 52%;
+    .songs_top {
+      padding-left: 5%;
+      height: 15%;
+      display: flex;
+
+      .songs_icons {
+        transform: scale(1.5);
+        margin-top: 1%;
+        margin-left: 1%;
+        margin-right: 2%;
+        color: white;
+      }
+    }
+    .songs_list {
+      padding: 5%;
+      .song {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        font-size: 15px;
+        padding: 2%;
+        border-radius: 7px;
+        &:hover {
+          background-color: gray;
+        }
+      }
+    }
   }
 }
