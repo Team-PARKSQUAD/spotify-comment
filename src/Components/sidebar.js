@@ -29,7 +29,7 @@ function sidebar() {
                 </li>
             </div>
 
-            <text className='playlist_text'>Playlists</text>
+            <text className='playlist_text'>PLAYLISTS</text>
 
             <div className='list'>
                 <li className='list_items'>
