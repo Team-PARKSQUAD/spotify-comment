@@ -1,0 +1,32 @@
+[
+    {
+        "name":"song1",
+        "imageUrl":"url",
+        "artist":"name",
+        "duration": "3:23"
+    },
+    {
+        "name":"song2",
+        "imageUrl":"url",
+        "artist":"name",
+        "duration": "2:23"
+    },
+    {
+        "name":"song3",
+        "imageUrl":"url",
+        "artist":"name",
+        "duration": "3:16"
+    },
+    {
+        "name":"song4",
+        "imageUrl":"url",
+        "artist":"name",
+        "duration": "3:45"
+    },
+    {
+        "name":"song5",
+        "imageUrl":"url",
+        "artist":"name",
+        "duration": "1:23"
+    }
+]
