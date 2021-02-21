@@ -4,7 +4,8 @@ import Player from "./player.js"
 import Albums from "./albums.js"
 import FullPlayer from "./FullPlayer.js"
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import player from './player.js'
+import player from './player.js';
+import Playing from "./playing";
 
 function MainWindow() {
     return (
@@ -19,13 +20,20 @@ function MainWindow() {
                         <Player/> 
                     </div>
                 </Route>
-                <Route path="/player:param" >
-                    <div className="mainWindow">
+                <Route path="/playing/:song" render={(props)=> <div className="mainWindow">
                         <div className="container">
-                            {/* <Sidebar/> */}
+                            <Sidebar/>
+                            <Playing {...props}/>
                         </div>
                         <Player/> 
-                    </div>
+                    </div>}>
+                    {/* <div className="mainWindow">
+                        <div className="container">
+                            <Sidebar/>
+                            <Playing {...props}/>
+                        </div>
+                        <Player/> 
+                    </div> */}
                 </Route>
                 <Route path="/"> 
                     <div className="mainWindow">
