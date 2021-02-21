@@ -1,16 +1,22 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 // import FavoriteIcon from '@material-ui/icons/Favorite';
 import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
+import ArrowBackIosSharpIcon from '@material-ui/icons/ArrowBackIosSharp'
 
 function FullPlayer() {
+    // const player = (song) => {
+    //     console.log(song)
+    // }
     return (
         <div className='player_container'>
             <div className='top_colour'>
 
             </div>
             <div className='top'>
+                <Link to="/"><ArrowBackIosSharpIcon fontSize="large" className="backBtn"/></Link>
                 <div className='song_image_area'>
                     <img className='song_image'  alt='' src='./assets/ab67706f0000000234097d638e927188c161a938.jpeg'/>
                 </div>
@@ -69,7 +75,6 @@ function FullPlayer() {
 
                 </div>
             </div>
-
         </div>
     )
 }
