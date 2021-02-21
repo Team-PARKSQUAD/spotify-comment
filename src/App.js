@@ -1,6 +1,7 @@
 import './App.css';
-import MainWindow from "./Components/MainWindow.js"
-import "./Styles/main.scss"
+import MainWindow from "./Components/MainWindow.js";
+import React from 'react';
+import "./Styles/main.scss";
 
 function App() {
   return (

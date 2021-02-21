@@ -4,12 +4,12 @@ import Player from "./player.js"
 import Albums from "./albums.js"
 import FullPlayer from "./FullPlayer.js"
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import player from './player.js'
 
 function MainWindow() {
     return (
         <Router>
             <Switch>
-
                 <Route path="/fullPlayer">
                     <div className="mainWindow">
                         <div className="container">
@@ -19,7 +19,14 @@ function MainWindow() {
                         <Player/> 
                     </div>
                 </Route>
-
+                <Route path="/player:param" >
+                    <div className="mainWindow">
+                        <div className="container">
+                            {/* <Sidebar/> */}
+                        </div>
+                        <Player/> 
+                    </div>
+                </Route>
                 <Route path="/"> 
                     <div className="mainWindow">
                         <div className="container">
