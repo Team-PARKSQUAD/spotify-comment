@@ -4,7 +4,7 @@ import Player from "./player.js"
 import Albums from "./albums.js"
 import FullPlayer from "./FullPlayer.js"
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import player from './player.js';
+// import player from './player.js';
 import Playing from "./playing";
 
 function MainWindow() {

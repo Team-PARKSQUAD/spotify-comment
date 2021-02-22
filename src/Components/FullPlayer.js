@@ -1,17 +1,18 @@
-import React, { useState } from 'react'
+import React from 'react'
+// import useState from 'react'
 import {Link} from 'react-router-dom'
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 // import FavoriteIcon from '@material-ui/icons/Favorite';
 import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
 import ArrowBackIosSharpIcon from '@material-ui/icons/ArrowBackIosSharp'
-import player from './player';
+// import player from './player';
 
 function FullPlayer() {
     // const player = (song) => {
     //     console.log(song)
     // }
-    const [song,setSong] = useState("")
+    // const [song,setSong] = useState("")
     return (
         <div className='player_container'>
             <div className='top_colour'>
