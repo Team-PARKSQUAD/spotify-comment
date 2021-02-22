@@ -1,7 +1,7 @@
 [
     {
         "name":"song1",
-        "imageUrl":"url",
+        "imageUrl":"https://i1.sndcdn.com/artworks-000189515316-czpf98-t500x500.jpg",
         "artist":"name",
         "duration": "3:23"
     },

@@ -28,19 +28,11 @@ function playing(props) {
         <div className="playing">
             <div className="playing_left">
                 <img src={songInfo.imageUrl} alt={songInfo.name}/>
-
+                <div className="songInfo">
+                    <h2>{songInfo.name}</h2>
+                    <p>{songInfo.artist} {songInfo.duration}</p>
+                </div>
             </div>
-            
-            {/* <div>{songInfo.name}</div>
-            <div>{songInfo.artist}</div>
-            <div>{songInfo.duration}</div>
-            <div>{songInfo.imageUrl}</div> */}
-            
-            <div>{songInfo.name}</div>
-            <div>{songInfo.artist}</div>
-            <div>{songInfo.duration}</div>
-            <div>{songInfo.imageUrl}</div>
-
             <div className="ChatSection">
                 <div className='header'>
                     <h1>Chat Section</h1>
