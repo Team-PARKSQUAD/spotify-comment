@@ -67,6 +67,9 @@
     }
     .songs_list {
       padding: 5%;
+      a{
+        text-decoration: none;
+      }
       .song {
         display: flex;
         justify-content: space-between;

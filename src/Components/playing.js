@@ -9,9 +9,7 @@ import firebase from 'firebase/app';
 
 
 function playing(props) {
-
-    const [user] = useAuthState(auth);
-
+        const [user] = useAuthState(auth);
     console.log(songData)
     var songInfo = {}
     songData.map((d)=>{
@@ -28,12 +26,13 @@ function playing(props) {
     console.log(songInfo)
     return (
         <div className="playing">
-            
-            <div>{songInfo.name}</div>
-            <div>{songInfo.artist}</div>
-            <div>{songInfo.duration}</div>
-            <div>{songInfo.imageUrl}</div>
-
+            <div className="playing_left">
+                <img src={songInfo.imageUrl} alt={songInfo.name}/>
+                <div className="songInfo">
+                    <h2>{songInfo.name}</h2>
+                    <p>{songInfo.artist} {songInfo.duration}</p>
+                </div>
+            </div>
             <div className="ChatSection">
                 <div className='header'>
                     <h1>Chat Section</h1>
@@ -43,11 +42,9 @@ function playing(props) {
                     {user ? <ChatSection/> : <SignIn />}
                 </div>
             </div>
-
         </div>
     )
 }
-
 function SignIn() {
 
     const signInWithGoogle = () => {
@@ -64,6 +61,4 @@ function SignOut() {
       <button onClick={() => auth.signOut()}>Sign Out</button>
     )
 }
-  
-
 export default playing
