@@ -1,29 +1,38 @@
 [
     {
-        "name":"song1",
+        "id":"song1",
+        "name": "We Don't Talk Anymore",
         "imageUrl":"https://i1.sndcdn.com/artworks-000189515316-czpf98-t500x500.jpg",
-        "artist":"name",
-        "duration": "3:23"
+        "artist":"Charlie Puth",
+        "duration": "3:23",
+        "color": "#00b7ff"
     },
     {
-        "name":"song2",
-        "imageUrl":"url",
-        "artist":"name",
-        "duration": "2:23"
+        "id":"song2",
+        "name":"Laare",
+        "imageUrl":"https://a10.gaanacdn.com/gn_img/albums/qa4WEqqWP1/a4WEA8GVWP/size_xxl_1575464055.webp",
+        "artist":"Maninder Butter",
+        "duration": "2:23",
+        "color": "#ff7600"
     },
     {
-        "name":"song3",
-        "imageUrl":"url",
-        "artist":"name",
-        "duration": "3:16"
+        "id":"song3",
+        "name":"FRIENDS",
+        "imageUrl":"https://upload.wikimedia.org/wikipedia/en/9/9d/Marshmello_and_Anne-Marie_Friends.jpg",
+        "artist":"Marshmello and Anne-Marie",
+        "duration": "3:16",
+        "color": "#ff006a"
     },
     {
-        "name":"song4",
-        "imageUrl":"url",
-        "artist":"name",
-        "duration": "3:45"
+        "id":"song4",
+        "name":"Wake Me up When September Ends",
+        "imageUrl":"https://e-cdns-images.dzcdn.net/images/cover/c14f698c45f445a5ba9dba395f26d642/350x350.jpg",
+        "artist":"Green Day ",
+        "duration": "3:45",
+        "color": "#ff0000"
     },
     {
+        "id":"song5",
         "name":"song5",
         "imageUrl":"url",
         "artist":"name",

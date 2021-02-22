@@ -1,3 +1,6 @@
+::-webkit-scrollbar{
+  display: none;
+}
 .comment_area {
   height: 100%;
   width: 100%;
@@ -33,13 +36,14 @@ p {
 }
 
 .sent {
-  flex-direction: row-reverse;
+  // flex-direction: row-reverse;
 }
 
 .sent p {
   color: white;
   background: #1db954;
   align-self: flex-end;
+  min-width: 100px;
 }
 .received p {
   background: #e5e5ea;
