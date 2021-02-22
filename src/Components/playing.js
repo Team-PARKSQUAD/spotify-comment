@@ -18,10 +18,13 @@ function playing(props) {
     console.log(songInfo)
     return (
         <div className="playing">
-            <div>{songInfo.name}</div>
+            <div>
+                <img src={songInfo.imageUrl} alt={songInfo.name}/>
+            </div>
+            {/* <div>{songInfo.name}</div>
             <div>{songInfo.artist}</div>
             <div>{songInfo.duration}</div>
-            <div>{songInfo.imageUrl}</div>
+            <div>{songInfo.imageUrl}</div> */}
         </div>
     )
 }
