@@ -36,14 +36,12 @@ function FullPlayer() {
                 </div>
                 <div className='songs_list'>
                     <div className='song'>
-                        <text># TITLE</text>
+                        <text className="title"># TITLE</text>
                         <text>ARTIST</text>
                         <text>DURATION</text>
                         <text>DURATION</text>
-                    </div>
-
-                    <div>    
-                        {songs.map(song => (
+                    </div>  
+                    {songs.map(song => (
                             <Song 
                                 id={song.id} 
                                 name={song.name} 
@@ -51,8 +49,7 @@ function FullPlayer() {
                                 artist={song.artist} 
                                 duration={song.duration}
                             />
-                        ))}
-                    </div>
+                    ))}
 
                 </div>
             </div>

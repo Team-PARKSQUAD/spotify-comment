@@ -68,15 +68,32 @@
     .songs_list {
       padding: 5%;
       a {
+        min-width: 200px;
+        // min-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
         text-decoration: none;
       }
       .song {
+        .title{
+          max-width: 200px;
+        }
         display: flex;
         justify-content: space-between;
         color: white;
         font-size: 15px;
         padding: 2%;
         border-radius: 7px;
+        cursor: pointer;
+        a{
+          // min-width: 100px;
+        }
+        text{
+          color: white;
+          text-align: center;
+          width: 100%;
+          // min-width: 100px;
+        }
         &:hover {
           background-color: gray;
         }
