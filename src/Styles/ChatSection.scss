@@ -5,12 +5,23 @@
   height: 100%;
   width: 100%;
 
-  .messages {
-    padding: 10px;
-    height: 90%;
-    margin: 10vh 0 10vh;
-    display: flex;
-    flex-direction: column;
+  .messeges {
+    // padding: 10px;
+    // height: 90%;
+    // margin: 10vh 0 10vh;
+    // display: flex;
+    // flex-direction: column;
+    .message{
+      p{
+        max-width: 40%;
+        margin-bottom: 10px;
+        line-height: 14px;
+        padding: 8px 12px;
+        border-radius: 25px;
+        position: relative;
+        text-align: center;
+      }
+    }
   }
 }
 
@@ -20,15 +31,7 @@ li {
   list-style: none;
 }
 
-p {
-  max-width: 40%;
-  margin-bottom: 10px;
-  line-height: 14px;
-  padding: 8px 12px;
-  border-radius: 25px;
-  position: relative;
-  text-align: center;
-}
+
 
 .message {
   display: flex;

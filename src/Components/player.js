@@ -1,4 +1,5 @@
-import React from 'react';
+import React , {useContext} from 'react'
+import { SongContext } from '../SongContext';
 import PlayCircleFilledWhiteIcon from '@material-ui/icons/PlayCircleFilledWhite';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
 import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
@@ -10,13 +11,22 @@ import DevicesIcon from '@material-ui/icons/Devices';
 import VolumeUpIcon from '@material-ui/icons/VolumeUp';
 
 function player() {
+    const [songs] = useContext(SongContext);
+    const id = window.location.href.split("/")
+    var selectedSong
+    songs.map(song=>{
+        if (song.id == id[id.length-1]){
+            selectedSong = song
+        }
+    })
+    console.log(selectedSong)
     return (
         <div className="player">
             <div className="player_left">
-                <img src="./thumbnail.jpeg" alt="thumbnail"/>
+                <img src={selectedSong ? selectedSong.imageUrl : "thumbnail.jpeg"} alt="thumbnail"/>
                 <div className="info">
-                    <p className="title">Song Name</p>
-                    <p className="artist">Artist</p>
+                    <p className="title">{selectedSong ? selectedSong.name : "Filhaal"}</p>
+                    <p className="artist">{selectedSong ? selectedSong.artist : "B Praak"}</p>
                 </div>
                 <div><FavoriteBorderIcon fontSize="small"/></div>
             </div>

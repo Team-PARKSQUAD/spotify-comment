@@ -6,10 +6,10 @@ function Song({id, name, artist, duration}) {
         <div className='song' >
             <Link to={"/playing/" + id}>
                 <text>{name}</text>
-            </Link>
-            <text>{artist}</text>
-            <text>{duration}</text>
-            <text>{duration}</text>
+                </Link>    
+                <text>{artist}</text>
+                <text>{duration}</text>
+                <text>{duration}</text>
         </div>
     )
 }
