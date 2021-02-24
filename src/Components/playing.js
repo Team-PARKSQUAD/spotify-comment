@@ -1,40 +1,34 @@
-import React from 'react'
-// import { Link } from "react-router-dom";
-import songData from "./data/songData.json";
-
+import React , {useContext} from 'react'
+import { SongContext } from '../SongContext';
 import ChatSection from './ChatSection';
 import {auth} from '../firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import firebase from 'firebase/app';
 
 
-function playing(props) {
-        const [user] = useAuthState(auth);
-    console.log(songData)
-    var songInfo = {}
-    songData.map((d)=>{
-        if (d["id"] === props.match.params.song){
-            songInfo = {
-                "name": d.name,
-                "artist": d.artist,
-                "duration": d.duration,
-                "imageUrl": d.imageUrl,
-                "color": d.color
-            }
-        }
-        return 0;
-    })
-    console.log(songInfo)
+function playing() {
+    const [user] = useAuthState(auth);
+    const [songs] = useContext(SongContext);
+    const name = window.location.href.split('/');
+    const this_id = name[name.length-1];
+    var i, song;
+    for (i=0; i < songs.length ; i++) {
+        if (songs[i].id === this_id) { song = songs[i];}
+    }
+
     return (
         <div className="playing">
-            <div className="playing_top" style={{backgroundImage: `linear-gradient(to bottom, ${songInfo.color} ,rgb(41, 36, 36))`}}>
+            <div className="playing_top" style={{backgroundImage: `linear-gradient(to bottom, ${song.color} ,rgb(41, 36, 36))`}}>
                 <div className="playing_left">
                     <div className="thumbnail">
-                        <img src={songInfo.imageUrl} alt={songInfo.name}/>
+                        <img src={song.imageUrl} alt={song.name}/>
                     </div>
                     <div className="songInfo">
-                        <h2>{songInfo.name}</h2>
-                        <p>{songInfo.artist} {songInfo.duration}</p>
+                        <h2>{song.name}</h2>
+                        <p>
+                            {song.artist} 
+                            {song.duration}
+                        </p>
                     </div>
                 </div>
                 <div className="ChatSection">
